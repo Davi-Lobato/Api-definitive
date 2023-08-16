@@ -23,3 +23,4 @@ function CalculaReajuste(salario, reajuste){
 
 const salarioAtual = 200;
 CalculaReajuste(salarioAtual, 0);
+module.exports = CalculaReajuste;

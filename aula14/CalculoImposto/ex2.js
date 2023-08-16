@@ -26,3 +26,4 @@ function CalculaFolhaPagamento(hora, valorHora){
 const hora = 5;
 const valorHora = 220;
 CalculaFolhaPagamento(hora, valorHora);
+module.exports = CalculaFolhaPagamento;
