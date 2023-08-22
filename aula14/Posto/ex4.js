@@ -24,5 +24,5 @@ function CalcularAbastecimento(tipo, litrosVendidos) {
     console.log("Valor a ser pago: R$"+valorPagar.toFixed(2));
 }
 
-CalcularAbastecimento("A", 20);
+// CalcularAbastecimento("A", 20);
 module.exports = CalcularAbastecimento;

@@ -27,6 +27,6 @@ function diaSemana(numeroDia) {
     }
 }
 
-const numeroDia = 1;
-diaSemana(numeroDia);
+// const numeroDia = 1;
+// diaSemana(numeroDia);
 module.exports = diaSemana;

@@ -1,4 +1,4 @@
-function CalculaReajuste(salario, reajuste){
+function CalculaReajuste(salario){
     let percentual;
     let aumento;
 
@@ -20,7 +20,7 @@ function CalculaReajuste(salario, reajuste){
     console.log("O valor do aumento: R$"+aumento);
     console.log("O novo salário, após o aumento: R$"+ novoSalario);
 }
-
-const salarioAtual = 200;
-CalculaReajuste(salarioAtual, 0);
 module.exports = CalculaReajuste;
+
+// const salarioAtual = 200;
+// CalculaReajuste(salarioAtual, 0);

@@ -25,6 +25,4 @@ function Hipermercado(tipoCarne, quantidadeKg, cartaoAssai) {
     console.log("Valor de desconto: ", cartaoAssai ? "5%" : "Nenhum");
     console.log("Valor a pagar: R$", novoPrecoTotal.toFixed(2));  
 }
-
-Hipermercado("alcatra", 20, "S");
 module.exports = Hipermercado;

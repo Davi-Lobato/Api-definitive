@@ -23,7 +23,7 @@ function CalculaFolhaPagamento(hora, valorHora){
     console.log("Salário Liquido: R$"+salarioLiquido.toFixed(2));
 }
 
-const hora = 5;
-const valorHora = 220;
-CalculaFolhaPagamento(hora, valorHora);
+// const hora = 5;
+// const valorHora = 220;
+// CalculaFolhaPagamento(hora, valorHora);
 module.exports = CalculaFolhaPagamento;
