@@ -1,6 +1,27 @@
 const express = require('express');
 const router = express.Router();
 
+//Importar o controlador da contas
+const contaController = require('../controllers/contasController');
+
+//Rota para listar todas as contas
+router.get('/', contaController.getContas);
+
+//Rota par criar uma conta
+router.post('/', contaController.createContas);
+
+//Rota para atualizar uma conta por ID
+router.put('/:id', contaController.uptadeContas);
+
+//Rota para exluir uma conta por ID
+router.delete('/:id', contaController.deleteConta)
+
+//Exoprtar o router
+module.exports = router;
+
+// PRIMEIRA TENTATIVA DAS ROTAS
+/*
+
 let contas = [];// Simulando um banco de dados em memória
 
 //Rota para criar uma nova conta
@@ -46,3 +67,4 @@ router.get("/:id", (req, res) => {
 })
 
 module.exports = router//Exportar para ser utilizada na main
+*/
