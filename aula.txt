@@ -1,0 +1,16 @@
+Get - Usado para solicitar dados no servidor
+Exemplo:
+[GET] /contatos
+
+Post - Usado para enviar dados para o servidor
+Exemplo:
+[Post] /contatos
+
+Put - Usado para atualizar ou modificar os dados do servidor
+Exemplo:
+[Put] /contatos/:1(id)
+
+Delete - Usado para excluir dados do servidor
+Exemplo:
+[Delete] /contatos/:1(id)
+
