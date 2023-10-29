@@ -39,6 +39,26 @@ function create(request, response){
     const data = request.body.data;
     const telefone = request.body.telefone;
     const email = request.body.email;
+
+    //Verificando nome
+    if(nome.length <5){
+      return response.json({ erro: "Nome inválido"});
+    }
+
+    //verificado data de nascimento
+    if(!/^\d{4}-\d{2}-\d{2}$/.test(data)){
+      return response.json({ erro:"Data invalida" });
+    }
+
+    //verificando telefone
+    if(!/^\(\d{2}\)\d{4,5}-\d{4}$/.test(telefone)){
+      return response.json({erro:"Telefone Invalido"});
+    }
+
+    //Verificando email
+    if(!/^.+@.+\..+$/.test(email)){
+      return response.json({erro:"Email Inválido"})
+    }
   
     const quantidade = listaContatos.length;
   
@@ -74,6 +94,26 @@ function update(request, response){
     const data = request.body.data;
     const telefone = request.body.telefone;
     const email = request.body.email;
+
+    //Verificando nome
+    if(nome.length <5){
+      return response.json({ erro: "Nome inválido"});
+    }
+
+    //verificado data de nascimento
+    if(!/^\d{4}-\d{2}-\d{2}$/.test(data)){
+      return response.json({erro:"Data invalida"});
+    }
+
+    //verificando telefone
+    if(!/^\(\d{2}\)\d{4,5}-\d{4}$/.test(telefone)){
+      return response.json({erro:"Telefone Invalido"});
+    }
+
+    //Verificando email
+    if(!/^.+@.+\..+$/.test(email)){
+      return response.json({erro:"Email Inválido"})
+    }
   
     contato.nome = nome;
     contato.data = data;
