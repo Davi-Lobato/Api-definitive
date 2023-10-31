@@ -28,34 +28,28 @@ const listaContatos = [{
     email: "j@gmail.com"
   }]
 
-//função list
 function list(request, response){
     return response.json({ dados: listaContatos});
 }
 
-//Função create
 function create(request, response){
     const nome = request.body.nome;
     const data = request.body.data;
     const telefone = request.body.telefone;
     const email = request.body.email;
 
-    //Verificando nome
     if(nome.length <5){
       return response.json({ erro: "Nome inválido"});
     }
 
-    //verificado data de nascimento
     if(!/^\d{4}-\d{2}-\d{2}$/.test(data)){
       return response.json({ erro:"Data invalida" });
     }
 
-    //verificando telefone
     if(!/^\(\d{2}\)\d{4,5}-\d{4}$/.test(telefone)){
       return response.json({erro:"Telefone Invalido"});
     }
 
-    //Verificando email
     if(!/^.+@.+\..+$/.test(email)){
       return response.json({erro:"Email Inválido"})
     }
@@ -74,7 +68,6 @@ function create(request, response){
     return response.json(novoContato);
 }
 
-//Função update
 function update(request, response){
     const codigo = request.params.codigo;
   
@@ -95,22 +88,18 @@ function update(request, response){
     const telefone = request.body.telefone;
     const email = request.body.email;
 
-    //Verificando nome
     if(nome.length <5){
       return response.json({ erro: "Nome inválido"});
     }
 
-    //verificado data de nascimento
     if(!/^\d{4}-\d{2}-\d{2}$/.test(data)){
       return response.json({erro:"Data invalida"});
     }
 
-    //verificando telefone
     if(!/^\(\d{2}\)\d{4,5}-\d{4}$/.test(telefone)){
       return response.json({erro:"Telefone Invalido"});
     }
 
-    //Verificando email
     if(!/^.+@.+\..+$/.test(email)){
       return response.json({erro:"Email Inválido"})
     }
@@ -123,7 +112,6 @@ function update(request, response){
     return response.json(contato);
 }
 
-//Função destroy]
 function destroy(request, response){
     const codigo = request.params.codigo;
   
@@ -132,7 +120,6 @@ function destroy(request, response){
     for (const [indice, _contato] of listaContatos.entries()) {
       if (_contato.codigo == codigo) {
         contato = _contato;
-        // Remove através do índice da lista
         listaContatos.splice(indice, 1);
         break;
       }
