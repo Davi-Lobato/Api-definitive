@@ -14,4 +14,4 @@ npm install --save-dev nodemon => salva as alterações em tempo real da api par
 
 Site 'Swagger' --> site para criação de funcionalidade de API
 
-NPM site --> npmjs.com --> site para consultar as biliotecas de dados do pacote npm (validação de dados)
+NPM site --> npmjs.com --> site para consultar as biliotecas de dados do pacote npm (validação de dados) 
