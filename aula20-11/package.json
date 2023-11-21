@@ -1,0 +1,27 @@
+{
+  "name": "aula09-10",
+  "version": "1.0.0",
+  "description": "dados da aula dia 09-10-2023",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon src/main.js"
+  },
+  "author": "Davi Musa Lobato",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "api-definitive"
+  },
+  "keywords": [
+    "api",
+    "javascript"
+  ],
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
