@@ -1,11 +1,11 @@
-const mysql = require('mysql12');
+const mysql = require('mysql2');
 
 const connection = mysql.createConnection({
     host: 'localhost',
-    port: 3307,
+    port: 3306,
     user: 'root',
     password: 'root',
-    database: 'api_contato_bd',
+    database: 'db_cinema_ingresso',
 });
 
 module.exports = connection;
