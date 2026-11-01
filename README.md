@@ -14,12 +14,12 @@ Tudo o que fiz na disciplina de APIs: exercícios das aulas, anotações e proje
 
 | Pasta | Conteúdo |
 |---|---|
+| `API-TEST/` | Primeiros testes em JavaScript: variáveis, strings e objetos |
 | `aula14-08/` | Exercícios de lógica em JavaScript (reajuste, imposto, posto, hipermercado) |
 | `aula16-10/` | Primeira API com Express |
 | `aula23-10/`, `aula06-11/` | Rotas e controllers de contatos; métodos HTTP |
 | `categorias-inicio/` | Início do CRUD de categorias |
 | `aula13-11/`, `aula20-11/` | Contatos e categorias com MySQL |
-| `API-TEST/` | Testes de consumo de API em JavaScript |
 
 As anotações gerais das aulas estão em [`notas.md`](notas.md).
 
