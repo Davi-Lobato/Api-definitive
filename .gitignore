@@ -1,1 +1,10 @@
-node_modules
+# Dependências
+node_modules/
+
+# Logs e arquivos locais
+*.log
+.env
+
+# Arquivos compactados
+*.zip
+*.7z
